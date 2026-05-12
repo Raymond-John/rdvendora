@@ -1,0 +1,567 @@
+/* ============================================================
+   VENDORA - Responsive Styles
+   ============================================================ */
+
+/* ---- Breakpoints ----
+   Mobile: < 768px
+   Tablet: 768px - 1024px
+   Desktop: 1024px - 1280px
+   Large: > 1280px
+*/
+
+/* ============================================================
+   TABLET (768px - 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  /* Hero */
+  .hero {
+    padding: 120px 0 80px;
+  }
+  
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+  
+  /* Grids */
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .topbar-search {
+    display: none;
+  }
+}
+
+/* ============================================================
+   MOBILE (< 768px)
+   ============================================================ */
+@media (max-width: 767px) {
+  :root {
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --text-3xl: 1.75rem;
+    --text-2xl: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  /* Navigation */
+  .navbar-inner {
+    padding: 0 var(--space-4);
+  }
+  
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-1);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .navbar-nav.open {
+    display: flex;
+  }
+  
+  .nav-link {
+    padding: var(--space-3) var(--space-4);
+    width: 100%;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .navbar-actions {
+    gap: var(--space-2);
+  }
+  
+  .navbar-actions .btn {
+    display: none;
+  }
+  
+  .navbar-actions .btn-icon {
+    display: inline-flex;
+  }
+  
+  /* Hero */
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+  
+  .hero-description {
+    font-size: var(--text-base);
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  
+  /* Grids */
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-card.popular {
+    transform: none;
+  }
+  
+  .pricing-card.popular:hover {
+    transform: translateY(-4px);
+  }
+  
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .theme-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Section */
+  .section {
+    padding: var(--space-12) 0;
+  }
+  
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+  
+  /* CTA */
+  .cta-content {
+    padding: var(--space-8) var(--space-4);
+  }
+  
+  .cta-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: var(--space-12) 0 var(--space-6);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+  
+  .footer-brand {
+    max-width: 100%;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+  
+  /* Dashboard */
+  .dashboard-content {
+    padding: var(--space-4);
+  }
+  
+  .dashboard-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filters-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filters-left,
+  .filters-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .search-box {
+    width: 100%;
+  }
+  
+  .quick-actions {
+    flex-direction: column;
+  }
+  
+  .quick-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Charts */
+  .chart-container {
+    padding: var(--space-4);
+  }
+  
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .chart-wrapper {
+    height: 220px;
+  }
+  
+  /* Tables */
+  .table-container {
+    border-radius: var(--radius-md);
+  }
+  
+  .data-table {
+    font-size: var(--text-xs);
+  }
+  
+  .data-table thead th,
+  .data-table tbody td {
+    padding: var(--space-2) var(--space-3);
+  }
+  
+  /* Auth */
+  .auth-visual {
+    display: none;
+  }
+  
+  .auth-form-side {
+    padding: var(--space-6) var(--space-4);
+  }
+  
+  /* Storefront */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-3) !important;
+  }
+  
+  /* Cart */
+  .cart-drawer {
+    width: 100%;
+  }
+  
+  /* Search */
+  .search-overlay {
+    padding-top: 80px;
+  }
+  
+  .search-modal {
+    margin: 0 var(--space-4);
+  }
+  
+  /* Stepper */
+  .stepper {
+    overflow-x: auto;
+    padding-bottom: var(--space-2);
+  }
+  
+  .step-label {
+    display: none;
+  }
+  
+  .step-connector {
+    width: 20px;
+  }
+  
+  /* Onboarding */
+  .onboarding-header {
+    padding: var(--space-4);
+  }
+  
+  .onboarding-step {
+    padding: var(--space-8) var(--space-4);
+  }
+  
+  .onboarding-footer {
+    padding: var(--space-4);
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .onboarding-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Topbar */
+  .topbar {
+    padding: 0 var(--space-4);
+  }
+  
+  .topbar-user-name,
+  .topbar-user-role {
+    display: none;
+  }
+  
+  /* Store */
+  .store-hero {
+    padding: 80px 0 40px !important;
+  }
+  
+  /* Product detail */
+  .product-detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Tabs */
+  .tabs {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .tab-btn {
+    white-space: nowrap;
+  }
+  
+  /* Campaign */
+  .campaign-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .campaign-stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border-primary);
+  }
+  
+  .campaign-stat:last-child {
+    border-bottom: none;
+  }
+  
+  /* Error page */
+  .error-code {
+    font-size: 80px;
+  }
+  
+  /* Success page */
+  .success-card {
+    padding: var(--space-8) var(--space-4);
+  }
+  
+  /* Modal adjustments */
+  .modal-container {
+    margin: var(--space-4);
+    max-height: calc(100vh - var(--space-8));
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================================
+   LARGE SCREENS (> 1280px)
+   ============================================================ */
+@media (min-width: 1281px) {
+  .container {
+    max-width: var(--container-wide);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .dashboard-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  .sidebar,
+  .topbar,
+  .navbar,
+  .footer,
+  .btn,
+  .no-print {
+    display: none !important;
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+  }
+  
+  .dashboard-content {
+    padding: 0;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .card,
+  .chart-container,
+  .stat-card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ============================================================
+   DARK MODE OVERRIDES
+   ============================================================ */
+[data-theme="dark"] .hero-dashboard-preview {
+  border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .search-trigger kbd {
+  background: var(--bg-tertiary);
+  border-color: var(--border-secondary);
+}
+
+[data-theme="dark"] .sidebar-toggle:hover {
+  background: var(--bg-tertiary);
+}
+
+/* ============================================================
+   LANDSCAPE MOBILE
+   ============================================================ */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    padding: 80px 0 40px;
+  }
+  
+  .hero-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .sidebar {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+/* ============================================================
+   HIGH DPI / RETINA
+   ============================================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .navbar-brand-icon,
+  .sidebar-brand-icon {
+    -webkit-font-smoothing: antialiased;
+  }
+}

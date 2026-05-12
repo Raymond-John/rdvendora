@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Vendora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <header class="navbar glass" id="navbar"></header>
+
+  <section style="padding: 140px 0 80px;">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Pricing</div>
+        <h1 class="section-title" style="font-size: var(--text-4xl);">Simple, transparent <span class="gradient-text">pricing</span></h1>
+        <p class="section-description">Choose the plan that fits your business. All plans include a 14-day free trial.</p>
+        <div style="margin-top: 24px;">
+          <div class="tabs" style="margin: 0 auto;">
+            <button class="tab-btn active" onclick="switchBilling(this, 'monthly')">Monthly</button>
+            <button class="tab-btn" onclick="switchBilling(this, 'annual')">Annual <span class="badge badge-success" style="margin-left: 4px;">-20%</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="pricing-grid stagger-children">
+        <div class="pricing-card reveal">
+          <div class="pricing-name">Launch</div>
+          <p class="pricing-desc">Perfect for getting started and testing the waters.</p>
+          <div class="pricing-price"><span class="pricing-amount monthly-price">$0</span><span class="pricing-amount annual-price hidden">$0</span><span class="pricing-period">/month</span></div>
+          <div class="pricing-features">
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Up to 10 products</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Basic analytics</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Vendora subdomain</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Email support</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Custom domain</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Discount codes</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Multi-vendor</div>
+          </div>
+          <a href="register.html" class="btn btn-outline w-full" style="justify-content: center;">Get started</a>
+        </div>
+        <div class="pricing-card popular reveal">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-name">Growth</div>
+          <p class="pricing-desc">For growing businesses ready to scale.</p>
+          <div class="pricing-price"><span class="pricing-amount monthly-price">$49</span><span class="pricing-amount annual-price hidden">$39</span><span class="pricing-period">/month</span></div>
+          <div class="pricing-features">
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Unlimited products</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Advanced analytics</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom domain</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Discount codes</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Priority support</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Multi-vendor</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>API access</div>
+          </div>
+          <a href="register.html" class="btn btn-primary w-full" style="justify-content: center;">Start free trial</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pricing-name">Scale</div>
+          <p class="pricing-desc">For scaling brands with advanced needs.</p>
+          <div class="pricing-price"><span class="pricing-amount monthly-price">$149</span><span class="pricing-amount annual-price hidden">$119</span><span class="pricing-period">/month</span></div>
+          <div class="pricing-features">
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Everything in Growth</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Multi-vendor (5)</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>API access</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom integrations</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Advanced reports</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Dedicated manager</div>
+            <div class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>SLA guarantee</div>
+          </div>
+          <a href="register.html" class="btn btn-outline w-full" style="justify-content: center;">Start free trial</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pricing-name">Empire</div>
+          <p class="pricing-desc">For enterprises with custom requirements.</p>
+          <div class="pricing-price"><span class="pricing-amount monthly-price">$399</span><span class="pricing-amount annual-price hidden">$319</span><span class="pricing-period">/month</span></div>
+          <div class="pricing-features">
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Everything in Scale</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Unlimited vendors</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Dedicated manager</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom development</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SLA guarantee</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>On-premise option</div>
+            <div class="pricing-feature included"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Training & onboarding</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline w-full" style="justify-content: center;">Contact sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="section-title text-center reveal" style="margin-bottom: 40px;">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Can I change plans later?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer"><p>Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we will prorate any difference.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Is there a free plan?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer"><p>Yes, our Launch plan is completely free forever. It is perfect for testing and small stores with up to 10 products.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Do I need a credit card to start?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer"><p>No credit card required for the Launch plan or to start your 14-day free trial of paid plans.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">What payment methods do you accept?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer"><p>We accept all major credit cards (Visa, Mastercard, Amex), PayPal, and bank transfers for annual plans.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer"></footer>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function switchBilling(btn, period) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.monthly-price, .annual-price').forEach(el => el.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
